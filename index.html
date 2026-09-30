@@ -3,35 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kindlo is the app studio within Kyndlo LLC, creating distinctive mobile experiences for people and brands.">
-  <meta name="theme-color" content="#dceefa">
-  <title>Kindlo — App studio</title>
+  <meta name="description" content="Kindlo creates thoughtful mobile apps, from tactile puzzles to daily rituals. Explore HiddenForm, Prism Lines, Daily Oracle, and Kyndlo.">
+  <meta name="theme-color" content="#f6f1e7">
+  <meta property="og:title" content="Kindlo — Small worlds. Lasting wonder.">
+  <meta property="og:description" content="Thoughtful mobile experiences, made to stay with you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kindlo.app/">
+  <meta property="og:image" content="https://kindlo.app/assets/hiddenform-hero.png">
+  <title>Kindlo — Small worlds. Lasting wonder.</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/home.css">
 </head>
 <body>
-  <header class="site-header shell">
-    <a class="brand" href="/" aria-label="Kindlo home">kindlo<span>APP STUDIO</span></a>
-    <nav aria-label="Primary navigation"><a href="#apps">Apps</a><a href="#studio">Our approach</a><a href="mailto:carlos@kyndlo.com">Contact</a></nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="/" aria-label="Kindlo home">kindlo</a>
+    <nav aria-label="Primary navigation">
+      <a href="#apps">Apps</a>
+      <a href="#approach">Our approach</a>
+      <a class="nav-contact" href="mailto:carlos@kyndlo.com">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-  <main>
-    <section class="hero shell">
-      <div class="hero-copy"><h1>Made to be<br>opened.</h1><p>Kindlo designs and creates distinctive mobile apps for the teams and brands behind them.</p></div>
-      <aside class="paper-note" aria-hidden="true">Better apps for a brighter day.</aside>
-      <div class="hero-art" aria-hidden="true"><img src="/assets/hiddenform-collection.png" alt=""></div>
-    </section>
-    <section class="collection" id="apps">
-      <div class="shell"><div class="collection-heading"><span>Apps we make</span><h2>Small worlds, each with a different point of view.</h2></div>
-        <div class="app-collection">
-          <article class="app-item hiddenform"><div class="device"><img src="/assets/hiddenform-collection.png" alt="HiddenForm collection screen on iPhone"></div><div class="app-copy"><span>Tactile silhouette puzzle</span><h3>HiddenForm</h3><p>A rich, hands-on puzzle built from illustrated wooden pieces.</p><a class="button" href="/whim-and-wood-support/download/">Download HiddenForm</a><small>We’ll take you to the right app store.</small></div></article>
-          <article class="app-item prism"><div class="device"><img src="/assets/prism-lines-screen.png" alt="Prism Lines game screen on iPhone"></div><div class="app-copy"><span>Color-block puzzle</span><h3>Prism Lines</h3><p>A bright strategy game for clearing lines and finding the next move.</p><a class="text-link" href="/prims-lines/">Explore Prism Lines <b>→</b></a></div></article>
-          <article class="app-item oracle"><div class="device oracle-device"><img src="/assets/daily-oracle-assets.png" alt="Daily Oracle visual design assets"></div><div class="app-copy"><span>Daily reflection</span><h3>Daily Oracle</h3><p>A quiet ritual of intention, reflection, and discovery.</p><a class="text-link" href="/daily-oracle/">Explore Daily Oracle <b>→</b></a></div></article>
-          <article class="app-item kyndlo"><div class="device brand-device"><img src="/assets/kyndlo-app-art.png" alt="Kyndlo app spirit animal artwork"></div><div class="app-copy"><span>Social connection</span><h3>Kyndlo</h3><p>A social connection app built around spirit-animal matching.</p><a class="button" href="https://play.google.com/store/apps/details?id=com.kyndlo.app&amp;hl=en_US">Get Kyndlo on Google Play</a><small>Available on Android.</small></div></article>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Small worlds.<br><em>Lasting wonder.</em></h1>
+          <p>Thoughtful mobile experiences, made to stay with you.</p>
+          <a class="primary-link" href="#apps">Explore our apps <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
-    <section class="studio" id="studio"><div class="shell"><h2>Different apps.<br>Shared care.</h2><p>Kindlo is the app studio within KYNDLO LLC. We create distinct mobile experiences for teams and brands that own their story.</p></div></section>
+    <section class="collection wrap" id="apps" aria-labelledby="apps-title">
+      <div class="section-heading">
+        <div><p class="section-index">01 / THE COLLECTION</p><h2 id="apps-title">Find your next<br><em>favorite moment.</em></h2></div>
+        <p>Each app has its own world. Take a look around and find one that feels like yours.</p>
+      </div>
+      <article class="feature-app" aria-labelledby="hiddenform-title">
+        <div class="feature-visual"><img src="/assets/hiddenform-hero.png" alt="Illustrated wooden lion puzzle on a phone" loading="lazy"></div>
+        <div class="feature-copy"><span class="app-number">01 / TACTILE PUZZLE</span><h3 id="hiddenform-title">HiddenForm</h3><p>Quiet, hands-on puzzles built from illustrated wooden pieces. Make a little room for wonder.</p><a class="text-link" href="/hiddenform/">Explore HiddenForm <span aria-hidden="true">↗</span></a><a class="sub-link" href="/whim-and-wood-support/download/">Get the app</a></div>
+      </article>
+      <div class="other-apps">
+        <article class="app-row prism" aria-labelledby="prism-title"><div class="app-art"><img src="/assets/prism-lines-screen.png" alt="Prism Lines game board" loading="lazy"></div><div class="app-row-copy"><span class="app-number">02 / STRATEGY PUZZLE</span><h3 id="prism-title">Prism Lines</h3><p>Bright pieces, satisfying moves, and one more line to clear.</p><a class="text-link" href="/prims-lines/">Explore Prism Lines <span aria-hidden="true">↗</span></a></div></article>
+        <article class="app-row oracle" aria-labelledby="oracle-title"><div class="app-art"><img src="/assets/daily-oracle-cover.png" alt="Daily Oracle mountain and lotus artwork" loading="lazy"></div><div class="app-row-copy"><span class="app-number">03 / DAILY RITUAL</span><h3 id="oracle-title">Daily Oracle</h3><p>A quiet space for intention, reflection, and discovery.</p><a class="text-link" href="/daily-oracle/">Explore Daily Oracle <span aria-hidden="true">↗</span></a></div></article>
+        <article class="app-row kyndlo" aria-labelledby="kyndlo-title"><div class="app-art"><img src="/assets/kyndlo-app-art.png" alt="Kyndlo spirit animal artwork" loading="lazy"></div><div class="app-row-copy"><span class="app-number">04 / SOCIAL CONNECTION</span><h3 id="kyndlo-title">Kyndlo</h3><p>Find connection through stories and spirit animals.</p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.kyndlo.app&amp;hl=en_US">Get Kyndlo on Google Play <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
+    <section class="approach" id="approach" aria-labelledby="approach-title"><div class="wrap approach-inner"><p class="section-index">02 / OUR APPROACH</p><h2 id="approach-title">Made with care.<br><em>Made to stay.</em></h2><p>Kindlo is the app studio within KYNDLO LLC. We build distinct mobile experiences with curiosity, craft, and a little sense of wonder.</p><a class="approach-link" href="mailto:carlos@kyndlo.com">Get in touch <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="site-footer shell"><span>© 2026 KYNDLO LLC</span><span><a href="/privacy/">Privacy</a><a href="mailto:carlos@kyndlo.com">Contact</a></span></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="wordmark" href="/">kindlo</a><p>© 2026 KYNDLO LLC</p><nav aria-label="Footer navigation"><a href="#apps">Apps</a><a href="/privacy/">Privacy</a><a href="mailto:carlos@kyndlo.com">Contact</a></nav></div></footer>
 </body>
 </html>
