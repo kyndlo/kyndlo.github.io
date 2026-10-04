@@ -2,6 +2,8 @@
 
 Created October 4, 2026. GA4 property: HiddenForm (557305387). Dashboard: https://analytics.google.com/analytics/web/#/a385583141p557305387/reports/intelligenthome. Web stream: HiddenForm website (16041531990). Measurement ID: G-1WQP76REKQ. Reporting timezone: America/Denver.
 
+The route /whim-and-wood-support/download/ is served by the separate kyndlo/whim-and-wood-support project Pages repository. Its page loads the shared script hosted in kyndlo/kyndlo.github.io at /scripts/hiddenform-analytics.js. Update the project page when changing this route.
+
 Send ads to https://kindlo.app/whim-and-wood-support/download/ with campaign tags, for example:
 
 https://kindlo.app/whim-and-wood-support/download/?utm_source=instagram&utm_medium=paid_social&utm_campaign=hiddenform_launch&utm_content=lion_video_01

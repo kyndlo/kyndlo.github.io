@@ -114,7 +114,7 @@
   if (automaticStore) {
     const link = [...document.querySelectorAll('a[href]')].find(link => storeOf(new URL(link.href)) === automaticStore);
     if (link) {
-      document.getElementById('status').textContent = `Opening ${automaticStore === 'app_store' ? 'App Store' : 'Google Play'}…`;
+      (document.getElementById('redirect-status') || document.getElementById('status')).textContent = `Opening ${automaticStore === 'app_store' ? 'App Store' : 'Google Play'}…`;
       let navigated = false;
       const go = () => { if (!navigated) { navigated = true; location.replace(link.href); } };
       if (enabled) {
