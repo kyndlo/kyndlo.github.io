@@ -18,7 +18,7 @@
   let enabled = false;
   let consent = read(localStorage, consentKey);
   window.dataLayer = window.dataLayer || [];
-  const gtag = (...args) => window.dataLayer.push(args);
+  function gtag() { window.dataLayer.push(arguments); }
   function enable() {
     if (enabled) return;
     enabled = true;
