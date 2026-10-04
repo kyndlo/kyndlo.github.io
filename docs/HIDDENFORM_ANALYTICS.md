@@ -16,8 +16,8 @@ The dedicated tag loads only on /hiddenform/ and /whim-and-wood-support/download
 
 - page_view: consented website visits.
 - download_cta_click: consented Get HiddenForm clicks leading to the download page.
-- download_click: consented manual Apple/Google store-button clicks; store is app_store or google_play.
-- store_redirect: consented automatic redirects; this is separate from a manual click.
+- download_click (key event, no monetary value, once per event): consented manual Apple/Google store-button clicks; store is app_store or google_play.
+- store_redirect (key event, no monetary value, once per event): consented automatic redirects; this is separate from a manual click.
 
 Phone routing is preserved: iPhone/iPad, including desktop-mode iPad, to Apple; Android to Google Play. Desktops and unknown devices show both buttons. There is a bounded 900 ms fallback for analytics-enabled navigation, so blocked analytics does not strand visitors.
 
@@ -37,3 +37,5 @@ Sources:
 - https://support.google.com/analytics/answer/12923437
 - https://support.google.com/googleplay/android-developer/answer/6263332
 - https://developer.apple.com/help/app-store-connect-analytics/acquisition/campaign-links
+
+Validation: twelve simulated OS/consent cases passed; production Google tag returned HTTP 200 and its page_view collector returned HTTP 204 for G-1WQP76REKQ. Manual Apple navigation preserved campaign parameters. A live QA campaign uses source setup_check, medium qa, campaign hiddenform_setup; exclude it when evaluating advertising.
