@@ -1,6 +1,6 @@
 # HiddenForm acquisition tracking
 
-Created October 4, 2026. GA4 property: HiddenForm. Web stream: HiddenForm website (16041531990). Measurement ID: G-1WQP76REKQ. Reporting timezone: America/Denver.
+Created October 4, 2026. GA4 property: HiddenForm (557305387). Dashboard: https://analytics.google.com/analytics/web/#/a385583141p557305387/reports/intelligenthome. Web stream: HiddenForm website (16041531990). Measurement ID: G-1WQP76REKQ. Reporting timezone: America/Denver.
 
 Send ads to https://kindlo.app/whim-and-wood-support/download/ with campaign tags, for example:
 
@@ -27,7 +27,7 @@ In GA4, use Traffic acquisition for session source/medium and campaign, Events f
 
 Google Play links preserve utm_source and utm_campaign (and medium). Use Play Console store performance/acquisition reports, including UTM source/campaign and country. These are store-reported acquisitions, subject to Google's attribution coverage; not every web visit or impression is represented.
 
-Apple links carry ct campaign labels and mt=8. Apple campaign attribution is NOT complete until the official provider token (pt) from App Store Connect's campaign-link builder is added. Do not invent the token. Apple sign-in expired during setup. Use HiddenForm > Analytics > Acquisition > Campaigns to generate an official link, obtain the provider token, and insert it into store links. Campaign metrics have Apple's minimum reporting thresholds.
+Apple links carry official provider token pt=128479651, ct campaign labels and mt=8. The token was verified in HiddenForm > Analytics > Acquisition > Campaigns > Generate a Campaign Link. Labels combine source, campaign and creative; labels exceeding Apple's 30-character limit use a readable prefix plus a deterministic hash. Campaign metrics have Apple's minimum reporting thresholds. Official baseline link: https://apps.apple.com/app/apple-store/id6809650487?pt=128479651&ct=hiddenform_website&mt=8. The Store event-scoped custom dimension is registered in GA4 for parameter store.
 
 Use the same campaign labels on the landing-page ad URLs and outgoing store links to compare ads → consented website activity → store acquisitions. These are aggregate reports, not a guaranteed person-by-person funnel.
 

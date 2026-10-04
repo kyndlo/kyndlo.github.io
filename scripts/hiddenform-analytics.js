@@ -49,7 +49,12 @@
         url.searchParams.set('utm_medium', clean(campaign.utm_medium) || 'website');
         link.href = url.href;
       } else if (store === 'app_store') {
-        url.searchParams.set('ct', clean([campaign.utm_source, campaign.utm_campaign, campaign.utm_content].filter(Boolean).join('.')) || 'hiddenform_website');
+        const label = clean([campaign.utm_source, campaign.utm_campaign, campaign.utm_content].filter(Boolean).join('.')) || 'hiddenform_website';
+        let hash = 2166136261;
+        for (const char of label) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619);
+        const token = label.length <= 30 ? label : `${label.slice(0, 21)}.${(hash >>> 0).toString(16).padStart(8, '0')}`;
+        url.searchParams.set('pt', '128479651');
+        url.searchParams.set('ct', token);
         url.searchParams.set('mt', '8');
         link.href = url.href;
       } else if (url.origin === location.origin && (url.pathname.startsWith('/hiddenform/') || url.pathname.startsWith('/whim-and-wood-support/download/'))) {
