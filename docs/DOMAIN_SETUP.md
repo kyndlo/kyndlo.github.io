@@ -8,4 +8,4 @@ DNS-only A records at the apex: 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 GitHub Pages repository: kyndlo/kyndlo.github.io, main branch, root directory. Custom domain and CNAME: fiveorbit.studio.
 
-The rebuilt website and analytics were published in commit 5c8566c. Both Cloudflare and Google public resolvers return the GitHub A records. GitHub requested a TLS certificate; HTTPS enforcement can be enabled once issuance finishes. Cloudflare activation and DNSSEC restoration must be verified after propagation. No old-domain redirect has been configured.
+The rebuilt website and analytics were published in commit 5c8566c. Both Cloudflare and Google public resolvers return the GitHub A records. Cloudflare is active. GitHub approved the certificate and HTTPS enforcement is enabled. HTTPS returns 200 for the root; www redirects to https://fiveorbit.studio/. Cloudflare DNSSEC is enabled and its matching DS record (key tag 2371, algorithm 13, digest type 2) is saved at Spaceship; final DS propagation is pending. No old-domain redirect has been configured.
