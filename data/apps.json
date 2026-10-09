@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "hiddenform",
+    "name": "HiddenForm",
+    "category": "Artful wooden puzzles",
+    "headline": [
+      "Piece by piece.",
+      "A little more wonder."
+    ],
+    "description": "Discover artful wooden puzzles, curious shapes, and a calmer kind of play.",
+    "detail": "Choose an illustrated animal, find where each wooden piece belongs, and bring the whole picture to life. A little challenge, a little patience, and something beautiful at the end.",
+    "icon": "/assets/apps/hiddenform-icon.webp",
+    "screen": "/assets/apps/hiddenform-screen.webp",
+    "screenAlt": "Actual HiddenForm screen showing the koi wooden puzzle, puzzle choices and piece counts, with a Preparing your video message.",
+    "apple": "https://apps.apple.com/us/app/hiddenform/id6809650487",
+    "google": "https://play.google.com/store/apps/details?id=com.whimandwood.puzzle.android",
+    "availability": "App Store · Google Play",
+    "facts": [
+      [
+        "Find the shape",
+        "Discover illustrated animal silhouettes with pieces that reward a closer look."
+      ],
+      [
+        "Choose your pace",
+        "Pick from different piece counts for a relaxed or more intricate puzzle."
+      ],
+      [
+        "A moment to unwind",
+        "Enjoy a quiet puzzle table on your phone or tablet."
+      ]
+    ],
+    "privacy": "https://kyndlo.github.io/whim-and-wood-support/privacy.html"
+  },
+  {
+    "slug": "prism-lines",
+    "name": "Prism Lines",
+    "category": "Colorful block puzzle",
+    "headline": [
+      "One move.",
+      "A whole new possibility."
+    ],
+    "description": "Match colors, clear lines, and find your flow. From a quick daily challenge to one more round.",
+    "detail": "Place shapes in Classic, slide matching colors together in Connect, or chase your next high score in Rush. Take on daily challenges and discover elemental piece styles as you play.",
+    "icon": "/assets/apps/prism-lines-icon.webp",
+    "screen": "/assets/apps/prism-lines-screen.webp",
+    "screenAlt": "Actual Prism Lines Connect level 27 screen showing colored gems, obstacles, move limit, undo and hint controls.",
+    "apple": "https://apps.apple.com/us/app/prism-lines/id6802463384",
+    "google": "https://play.google.com/store/apps/details?id=com.kyndlo.prismlines",
+    "availability": "App Store · Google Play",
+    "facts": [
+      [
+        "Find your mode",
+        "Classic, Connect, Rush, Workshop and more offer different ways to challenge yourself."
+      ],
+      [
+        "Make it a daily ritual",
+        "Play Daily Prism and the daily Connect challenge."
+      ],
+      [
+        "Make every move count",
+        "Discover elemental forms, build combos, and use hints or undo when you need them."
+      ]
+    ],
+    "privacy": "https://pirumpi.github.io/prism-lines/privacy/"
+  },
+  {
+    "slug": "kyndlo",
+    "name": "Kyndlo",
+    "category": "Real-world connection",
+    "headline": [
+      "Find your people.",
+      "Share your world."
+    ],
+    "description": "Connect through personality, shared interests, and real-world experiences.",
+    "detail": "Discover your spirit animal, meet people who share your interests, and give new friendships a place to grow through activities and meaningful conversations.",
+    "icon": "/assets/apps/kyndlo-icon.webp",
+    "screen": "/assets/apps/kyndlo-quests-screen.webp",
+    "screenAlt": "Kyndlo Quests screen showing the Speakeasy Golf Lounge Discovery Quest, challenges, XP and Join Quest action.",
+    "apple": null,
+    "google": "https://play.google.com/store/apps/details?id=com.kyndlo.app",
+    "availability": "Android open testing · iOS coming soon",
+    "facts": [
+      [
+        "Start with who you are",
+        "Explore personality and shared interests through your spirit animal."
+      ],
+      [
+        "Find common ground",
+        "Connect with people through experiences and activities you enjoy."
+      ],
+      [
+        "Meet beyond the screen",
+        "Make room for real-world friendships and meaningful conversations."
+      ]
+    ],
+    "privacy": "https://kyndlo.com/privacy"
+  },
+  {
+    "slug": "daily-spirit",
+    "name": "Daily Spirit",
+    "category": "Oracle & Puzzle",
+    "headline": [
+      "A little space",
+      "for yourself."
+    ],
+    "description": "Oracle & Puzzle. A daily ritual of reflection and discovery.",
+    "detail": "Hold an intention, swirl the deck, and let a card find you. Piece its artwork together, discover its meaning, and keep a private journal of your cards and reflections.",
+    "icon": "/assets/apps/daily-spirit-icon.webp",
+    "screen": "/assets/apps/daily-spirit-screen.webp",
+    "screenAlt": "Daily Oracle home screen showing the Presence heron card, View Details, Your Journey and journal navigation.",
+    "apple": null,
+    "google": null,
+    "availability": "Coming soon",
+    "facts": [
+      [
+        "Set an intention",
+        "Start with a quiet moment and trace slow circles over the deck."
+      ],
+      [
+        "Piece it together",
+        "Complete a jigsaw of your card’s artwork before its reveal."
+      ],
+      [
+        "Carry it with you",
+        "Explore the card’s meaning and record your reflections in a private journal."
+      ]
+    ],
+    "privacy": "https://dailyspirit.azurewebsites.net/privacy"
+  }
+]

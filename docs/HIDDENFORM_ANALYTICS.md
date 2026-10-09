@@ -39,3 +39,7 @@ Sources:
 - https://developer.apple.com/help/app-store-connect-analytics/acquisition/campaign-links
 
 Validation: twelve simulated OS/consent cases passed; production Google tag returned HTTP 200 and its page_view collector returned HTTP 204 for G-1WQP76REKQ. Manual Apple navigation preserved campaign parameters. A live QA campaign uses source setup_check, medium qa, campaign hiddenform_setup; exclude it when evaluating advertising.
+
+## October 8 studio-wide update
+
+This historical setup is superseded for website scope by [FIVEORBIT_ANALYTICS.md](FIVEORBIT_ANALYTICS.md). The same measurement ID and existing download key events are retained.
