@@ -29,7 +29,7 @@ First-time mobile download visitors are sent directly to their store without an 
 
 Localhost previews never send production analytics, even when consent is granted. Fifty simulated routing/campaign/consent cases pass, including all four apps, studio page views, consent scope, unavailable stores and duplicate-callback protection. Static verification passes for 15 pages and 213 local references.
 
-Website code is updated locally and requires deployment before live visitors use the new instrumentation. Dashboard dimension changes are already saved. Website analytics measures visits and store intent, not actual app installations or behavior inside native apps.
+Website code was deployed to GitHub Pages for fiveorbit.studio on October 8, 2026. Dashboard dimension changes are already saved. Website analytics measures visits and store intent, not actual app installations or behavior inside native apps.
 
 ## References
 

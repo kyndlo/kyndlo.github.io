@@ -40,7 +40,7 @@ The routing suite mocks navigation and analytics so its tests do not generate li
 
 ## Hosting
 
-The existing GitHub Pages configuration and `kindlo.app` CNAME remain in place; the public studio identity is FiveOrbit Studio. No deployment has been performed.
+GitHub Pages publishes this repository from `main` at the root. The primary custom domain is `fiveorbit.studio`, with `www` pointing to `kyndlo.github.io`. Cloudflare serves DNS-only records for GitHub Pages. The redesigned site and studio-wide analytics were published October 8, 2026.
 
 New HiddenForm links use `/hiddenform/download/`, owned by this website, so they no longer depend on the separate support project's assets. The local legacy `/whim-and-wood-support/download/` page works too. In production that legacy path is owned by the separate `kyndlo/whim-and-wood-support` Pages project; changing this checkout alone does not replace that project's HTML. The shared analytics script retains portable styles for compatibility with it. See `docs/HIDDENFORM_ANALYTICS.md`.
 
