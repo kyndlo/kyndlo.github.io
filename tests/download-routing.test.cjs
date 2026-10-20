@@ -88,6 +88,27 @@ assert.equal(play.searchParams.get('utm_campaign'),'launch');
 assert.equal(play.searchParams.get('utm_medium'),'paid');
 cases++;
 
+// Campaign attribution must survive the store handoff even without web consent.
+for (const studioConsent of [null, 'denied', 'granted']) {
+  const query='?utm_source=chatgpt&utm_medium=cpc&utm_campaign=hf_launch&utm_content=ad01&utm_term=puzzle';
+  for (const device of [devices[0], devices[3]]) {
+    const run=simulate(apps[0], device, {query, studioConsent});
+    run.scheduled.forEach(timer=>timer.fn());
+    assert.equal(run.navigations.length,1);
+    const url=new URL(run.navigations[0][1]);
+    if (device[4]==='apple') {
+      assert.equal(url.searchParams.get('pt'),'128479651');
+      assert.equal(url.searchParams.get('ct'),'chatgpt.hf_launch.ad01');
+    } else {
+      const referrer=new URLSearchParams(url.searchParams.get('referrer'));
+      for (const [key,value] of new URLSearchParams(query)) assert.equal(referrer.get(key),value);
+      assert.equal(url.searchParams.get('utm_source'),'chatgpt');
+    }
+    if (studioConsent!=='granted') assert.equal(run.inserted.filter(x=>x.tag==='script').length,0);
+    cases++;
+  }
+}
+
 const desktop=simulate(apps[0],devices[4],{consent:'granted'});
 const link=desktop.links.find(l=>l.store==='google_play');
 let prevented=false;

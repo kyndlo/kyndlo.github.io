@@ -72,6 +72,14 @@
         url.searchParams.set('utm_source', clean(campaign.utm_source) || (appOf(url) === 'hiddenform' ? 'kindlo' : 'fiveorbit'));
         url.searchParams.set('utm_campaign', clean(campaign.utm_campaign) || appOf(url) + '_website');
         url.searchParams.set('utm_medium', clean(campaign.utm_medium) || 'website');
+        // Play Console uses top-level UTMs; native install attribution reads
+        // the encoded referrer through Google Play's Install Referrer API.
+        const referrer = new URLSearchParams();
+        for (const key of keys) {
+          const value = url.searchParams.get(key) || clean(campaign[key]);
+          if (value) referrer.set(key, value);
+        }
+        url.searchParams.set('referrer', referrer.toString());
         link.href = url.href;
       } else if (store === 'app_store') {
         const label = clean([campaign.utm_source, campaign.utm_campaign, campaign.utm_content].filter(Boolean).join('.')) || appOf(url) + '_website';

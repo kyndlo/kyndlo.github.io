@@ -19,7 +19,7 @@ def footer():
     return f'''<footer class="site-footer"><div class="wrap footer-inner">{brand()}<p>© 2026 KYNDLO LLC</p><nav aria-label="Footer navigation"><a href="/privacy/">Privacy</a><a href="mailto:carlos@kyndlo.com">Contact</a></nav></div></footer>'''
 
 def page(title, desc, body, path='/', attrs='', download=False, analytics=True):
-    scripts = '<script defer src="/scripts/hiddenform-analytics.js?v=fiveorbit-analytics-2"></script>' if analytics else ''
+    scripts = '<script defer src="/scripts/hiddenform-analytics.js?v=fiveorbit-analytics-3"></script>' if analytics else ''
     if download:
         scripts += '\n<script defer src="/scripts/download.js?v=fiveorbit-analytics-2"></script>'
     return f'''<!doctype html>

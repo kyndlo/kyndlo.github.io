@@ -47,3 +47,5 @@ New HiddenForm links use `/hiddenform/download/`, owned by this website, so they
 Source and validation details: `docs/ASSET_SOURCES.md` and `design/REVIEW.md`.
 
 Studio-wide analytics setup and reporting fields: [docs/FIVEORBIT_ANALYTICS.md](docs/FIVEORBIT_ANALYTICS.md).
+
+HiddenForm ChatGPT campaign URL and measurement plan: [docs/CHATGPT_CAMPAIGN_TRACKING.md](docs/CHATGPT_CAMPAIGN_TRACKING.md).
