@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["UXUB9GN4UH.com.whimandwood.puzzle"],
+        "components": [
+          { "/": "/hiddenform/puzzle/*", "comment": "Open a HiddenForm puzzle in the app" }
+        ]
+      }
+    ]
+  }
+}
