@@ -133,6 +133,13 @@ policies=''.join(f'<li><a href="{a["privacy"]}">{a["name"]} {ARROW}</a></li>' fo
 body=f'''<main id="main" class="policy-page wrap"><h1>Privacy</h1><p class="policy-lede">Find the privacy information for each of our apps, plus the notice for optional FiveOrbit website analytics.</p><h2>App privacy policies</h2><ul class="policy-links">{policies}</ul><h2>Website analytics</h2><p>FiveOrbit Studio’s website, app pages and download pages offer optional analytics. Downloads work with either choice.</p><a class="text-link" href="/hiddenform/privacy.html">Read the website analytics notice {ARROW}</a><p>Questions? <a href="mailto:carlos@kyndlo.com">carlos@kyndlo.com</a></p></main>'''
 write('privacy/index.html',page('Privacy — FiveOrbit Studio','Privacy links for FiveOrbit Studio apps and HiddenForm website analytics.',body,analytics=False))
 
+policy=json.loads((ROOT/'data/prism-lines-privacy.json').read_text())
+sections=''.join(f'<section aria-labelledby="{e(s["id"])}"><h2 id="{e(s["id"])}">{e(s["title"])}</h2>' +
+                 ''.join(f'<p>{e(p)}</p>' for p in s['paragraphs']) + '</section>' for s in policy['sections'])
+providers=''.join(f'<li><a href="{e(p["url"],quote=True)}">{e(p["name"])}</a></li>' for p in policy['providers'])
+body=f'<main id="main" class="policy-page wrap"><h1>{e(policy["title"])}</h1><p>Updated {e(policy["updated"])}</p><p class="policy-lede">{e(policy["introduction"])}</p>{sections}<h2>Provider policies and controls</h2><ul>{providers}</ul><p><a href="mailto:carlos@kyndlo.com">Contact Kyndlo LLC</a></p><a href="/prism-lines/">Back to Prism Lines</a></main>'
+write('prism-lines/privacy/index.html',page('Prism Lines privacy — FiveOrbit Studio','Prism Lines privacy choices, rewarded ads, Meta campaign measurement and data controls.',body,analytics=False))
+
 # Preserve the existing analytics notice verbatim; change only its surrounding presentation.
 notice_path=ROOT/'hiddenform/privacy.html'
 notice=notice_path.read_text()
