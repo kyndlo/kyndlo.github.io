@@ -16,6 +16,7 @@
       "title": "Game Center, Google Play Games and purchases",
       "paragraphs": [
         "Optional Apple Game Center and Google Play Games features use those platform services for sign-in, achievements, leaderboards and supported cosmetic preferences. Their processing is governed by Apple and Google and your account settings. We do not send Game Center or Play Games player identifiers to Meta.",
+        "If you choose Google Play Games, the app reads your game-specific player identifier and gamer display name to show the signed-in player and keep achievement records separate. Google processes submitted achievements and scores, plus supported color-palette and celebration preferences through Saved Games. The app does not request your email, contacts or friends list, and does not send Play Games player identifiers or display names to Meta or FiveOrbit EventHub. Guest play remains available without Google sign-in; guest achievement and ranking records are not copied into another Google player’s account.",
         "Apple StoreKit and Google Play Billing process purchases. The app verifies purchase records to provide or restore entitlements and deliver consumable packs once. Kyndlo does not receive payment-card or banking information. Consumable saved-power inventory may be device-local and is separate from restorable ad-free entitlements."
       ]
     },
@@ -73,6 +74,7 @@
       "title": "Retention, access and deletion",
       "paragraphs": [
         "Local game data remains until removed through available app controls, deletion of the app, or backups you control. Deleting the app stops that installation from sending events, but does not automatically delete previously received EventHub or partner records. EventHub's raw-event retention is described above. Apple, Google, Meta and the advertising/consent providers set their own retention periods and provide account, privacy and deletion controls.",
+        "Google Play Games data can be managed at https://play.google.com/games/profile. Under Your data, choose Delete individual game data to remove Prism Lines records held by Google. Choosing Play as a guest in the app stops its Google game synchronization. Google profile deletion, device-local saves, purchase records and previously received EventHub events are separate; deleting one does not automatically delete the others.",
         "For access, correction or deletion questions about Prism Lines, contact carlos@kyndlo.com. Please identify the app and platform. EventHub records are associated with random install identifiers rather than names or accounts, so we may need that app-generated identifier to locate them. Do not send passwords, payment-card details or identifiers by public issue. Meta account activity and advertising choices can also be managed through Meta's own privacy tools."
       ]
     },
@@ -120,6 +122,10 @@
     {
       "name": "Microsoft privacy statement",
       "url": "https://privacy.microsoft.com/privacystatement"
+    },
+    {
+      "name": "Google Play Games profile and data controls",
+      "url": "https://play.google.com/games/profile"
     }
   ]
 }
